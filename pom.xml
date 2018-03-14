@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.zaitiaowu</groupId>
+	<artifactId>zglms</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<modules>
+		<module>zglms-service</module>
+		<module>zglms-dao</module>
+		<module>zglms-model</module>
+		<module>zglms-web</module>
+	</modules>
+	<packaging>pom</packaging>
+
+	<name>zglms</name>
+	<description>xue</description>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.10.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<!-- 版本说明：这里统一管理依赖的版本号 -->
+	<dependencyManagement>
+		<dependencies>
+
+			<dependency>
+				<groupId>com.zaitiaowu</groupId>
+				<artifactId>zglms-model</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+
+		</dependencies>
+	</dependencyManagement>
+</project>
